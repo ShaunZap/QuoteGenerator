@@ -8,7 +8,6 @@ body{
 }
 h1{
     font-family: 'UnifrakturMaguntia', cursive;
-    /* color: rgba(0, 0, 0, 0.708); */
     background-image: url(wood.jpg);
     background-size: cover;
     background-clip: text;
@@ -58,4 +57,35 @@ button:hover{
     cursor: pointer;
     transition: 0.5s;
     border: 5px solid rgb(29, 16, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    button{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 750px) {
+    button{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 520px) {
+    h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #quoteText{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    button{
+        font-size: 16px;
+    }
 }

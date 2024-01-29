@@ -8,6 +8,4 @@ async function getQuote(){
     const data = await response.json();
     document.getElementById("quoteText").innerHTML ='"' + data.content + '"';
     document.getElementById("quoteAuthor").innerHTML = '-' + data.author;
-
-
 }
